@@ -1,0 +1,225 @@
+{
+  "mockApi": {
+    "company": "FreshBasket",
+    "description": "Mock data for an online grocery delivery service.",
+    "serviceAreas": ["Cape Town", "Johannesburg", "Durban"],
+    "deliveryWindowHours": 2,
+    "monthlyOrderVolume": 25000,
+    "lookupInstructions": {
+      "order": "Find an order only when both orderNumber and phoneNumber match.",
+      "stock": "Match productId or productName and return the stock status.",
+      "deliveryArea": "Match the suburb and city. A covered area supports delivery within a 2-hour window."
+    }
+  },
+  "orders": [
+    {
+      "orderNumber": "FB1001",
+      "phoneNumber": "079000001",
+      "customerName": "Zama M",
+      "status": "out_for_delivery",
+      "placedAt": "2026-10-09T07:15:00+02:00",
+      "delivery": {
+        "city": "Cape Town",
+        "suburb": "Sea Point",
+        "address": "12 Example Road",
+        "estimatedWindow": {
+          "start": "2026-10-09T09:00:00+02:00",
+          "end": "2026-10-09T11:00:00+02:00"
+        }
+      },
+      "items": [
+        { "productId": "PRD-001", "name": "Baby spinach", "quantity": 2, "unit": "bag" },
+        { "productId": "PRD-004", "name": "Free-range eggs", "quantity": 1, "unit": "dozen" }
+      ],
+      "total": { "amount": 118.5, "currency": "ZAR" },
+      "trackingMessage": "Your order is with the driver and on its way."
+    },
+    {
+      "orderNumber": "FB1002",
+      "phoneNumber": "079000002",
+      "customerName": "Ncamie N",
+      "status": "confirmed",
+      "placedAt": "2026-10-09T08:05:00+02:00",
+      "delivery": {
+        "city": "Johannesburg",
+        "suburb": "Rosebank",
+        "address": "25 Sample Avenue",
+        "estimatedWindow": {
+          "start": "2026-10-09T10:00:00+02:00",
+          "end": "2026-10-09T12:00:00+02:00"
+        }
+      },
+      "items": [
+        { "productId": "PRD-002", "name": "Ripe avocados", "quantity": 3, "unit": "each" },
+        { "productId": "PRD-006", "name": "Whole milk", "quantity": 2, "unit": "2L bottle" }
+      ],
+      "total": { "amount": 154.0, "currency": "ZAR" },
+      "trackingMessage": "Your order is confirmed and being packed."
+    },
+    {
+      "orderNumber": "FB1003",
+      "phoneNumber": "079000003",
+      "customerName": "Sanelisiwe M",
+      "status": "delivered",
+      "placedAt": "2026-10-08T14:20:00+02:00",
+      "delivery": {
+        "city": "Durban",
+        "suburb": "Umhlanga",
+        "address": "8 Fictional Crescent",
+        "deliveredAt": "2026-10-08T16:05:00+02:00"
+      },
+      "items": [
+        { "productId": "PRD-003", "name": "Mixed apples", "quantity": 1, "unit": "1kg bag" },
+        { "productId": "PRD-005", "name": "Brown bread", "quantity": 2, "unit": "loaf" }
+      ],
+      "total": { "amount": 86.0, "currency": "ZAR" },
+      "trackingMessage": "Your order was delivered successfully."
+    },
+    {
+      "orderNumber": "FB1004",
+      "phoneNumber": "079000004",
+      "customerName": "Blessing S",
+      "status": "delayed",
+      "placedAt": "2026-10-09T06:45:00+02:00",
+      "delivery": {
+        "city": "Cape Town",
+        "suburb": "Claremont",
+        "address": "41 Demo Street",
+        "estimatedWindow": {
+          "start": "2026-10-09T09:30:00+02:00",
+          "end": "2026-10-09T11:30:00+02:00"
+        }
+      },
+      "items": [
+        { "productId": "PRD-007", "name": "Rolled oats", "quantity": 1, "unit": "1kg bag" }
+      ],
+      "total": { "amount": 42.99, "currency": "ZAR" },
+      "trackingMessage": "Your delivery is delayed due to high demand. The updated window is shown above."
+    }
+  ],
+  "products": [
+    {
+      "productId": "PRD-001",
+      "name": "Baby spinach",
+      "category": "Fresh produce",
+      "stockStatus": "in_stock",
+      "availableQuantity": 48,
+      "unit": "bag",
+      "price": { "amount": 24.5, "currency": "ZAR" }
+    },
+    {
+      "productId": "PRD-002",
+      "name": "Ripe avocados",
+      "category": "Fresh produce",
+      "stockStatus": "low_stock",
+      "availableQuantity": 6,
+      "unit": "each",
+      "price": { "amount": 18.0, "currency": "ZAR" }
+    },
+    {
+      "productId": "PRD-003",
+      "name": "Mixed apples",
+      "category": "Fresh produce",
+      "stockStatus": "in_stock",
+      "availableQuantity": 32,
+      "unit": "1kg bag",
+      "price": { "amount": 39.0, "currency": "ZAR" }
+    },
+    {
+      "productId": "PRD-004",
+      "name": "Free-range eggs",
+      "category": "Fresh produce",
+      "stockStatus": "in_stock",
+      "availableQuantity": 21,
+      "unit": "dozen",
+      "price": { "amount": 45.0, "currency": "ZAR" }
+    },
+    {
+      "productId": "PRD-005",
+      "name": "Brown bread",
+      "category": "Pantry staples",
+      "stockStatus": "out_of_stock",
+      "availableQuantity": 0,
+      "unit": "loaf",
+      "price": { "amount": 19.5, "currency": "ZAR" },
+      "restockEstimate": "2026-10-10"
+    },
+    {
+      "productId": "PRD-006",
+      "name": "Whole milk",
+      "category": "Household goods",
+      "stockStatus": "in_stock",
+      "availableQuantity": 40,
+      "unit": "2L bottle",
+      "price": { "amount": 32.0, "currency": "ZAR" }
+    },
+    {
+      "productId": "PRD-007",
+      "name": "Rolled oats",
+      "category": "Pantry staples",
+      "stockStatus": "in_stock",
+      "availableQuantity": 17,
+      "unit": "1kg bag",
+      "price": { "amount": 42.99, "currency": "ZAR" }
+    },
+    {
+      "productId": "PRD-008",
+      "name": "Dishwashing liquid",
+      "category": "Household goods",
+      "stockStatus": "low_stock",
+      "availableQuantity": 4,
+      "unit": "750ml bottle",
+      "price": { "amount": 29.99, "currency": "ZAR" }
+    }
+  ],
+  "deliveryAreas": [
+    {
+      "city": "Cape Town",
+      "suburbs": ["Sea Point", "Claremont", "Gardens", "Observatory"],
+      "covered": true,
+      "deliveryWindowHours": 2
+    },
+    {
+      "city": "Johannesburg",
+      "suburbs": ["Rosebank", "Sandton", "Melville", "Parkhurst"],
+      "covered": true,
+      "deliveryWindowHours": 2
+    },
+    {
+      "city": "Durban",
+      "suburbs": ["Umhlanga", "Berea", "Westville", "Durban North"],
+      "covered": true,
+      "deliveryWindowHours": 2
+    },
+    {
+      "city": "Cape Town",
+      "suburbs": ["Atlantis", "Khayelitsha"],
+      "covered": false,
+      "deliveryWindowHours": null,
+      "message": "This suburb is not currently in the FreshBasket delivery area."
+    }
+  ],
+  "sampleResponses": {
+    "orderNotFound": {
+      "success": false,
+      "error": {
+        "code": "ORDER_NOT_FOUND",
+        "message": "No order matched that order number and phone number."
+      }
+    },
+    "productNotFound": {
+      "success": false,
+      "error": {
+        "code": "PRODUCT_NOT_FOUND",
+        "message": "No product matched that ID or name."
+      }
+    },
+    "deliveryAreaNotFound": {
+      "success": false,
+      "error": {
+        "code": "AREA_NOT_FOUND",
+        "message": "We could not find coverage information for that suburb."
+      }
+    }
+  }
+}
