@@ -103,7 +103,7 @@
       "name": "Baby spinach",
       "category": "Fresh produce",
       "stockStatus": "in_stock",
-      "availableQuantity": 48,
+      "availableQuantity": 48 🥬,
       "unit": "bag",
       "price": { "amount": 24.5, "currency": "ZAR" }
     },
@@ -112,7 +112,7 @@
       "name": "Ripe avocados",
       "category": "Fresh produce",
       "stockStatus": "low_stock",
-      "availableQuantity": 6,
+      "availableQuantity": 6 🥑,
       "unit": "each",
       "price": { "amount": 18.0, "currency": "ZAR" }
     },
@@ -121,7 +121,7 @@
       "name": "Mixed apples",
       "category": "Fresh produce",
       "stockStatus": "in_stock",
-      "availableQuantity": 32,
+      "availableQuantity": 32 🍎🍏,
       "unit": "1kg bag",
       "price": { "amount": 39.0, "currency": "ZAR" }
     },
@@ -130,7 +130,7 @@
       "name": "Free-range eggs",
       "category": "Fresh produce",
       "stockStatus": "in_stock",
-      "availableQuantity": 21,
+      "availableQuantity": 21 🥚,
       "unit": "dozen",
       "price": { "amount": 45.0, "currency": "ZAR" }
     },
@@ -139,7 +139,7 @@
       "name": "Brown bread",
       "category": "Pantry staples",
       "stockStatus": "out_of_stock",
-      "availableQuantity": 0,
+      "availableQuantity": 0 🍞,
       "unit": "loaf",
       "price": { "amount": 19.5, "currency": "ZAR" },
       "restockEstimate": "2026-10-10"
@@ -149,7 +149,7 @@
       "name": "Whole milk",
       "category": "Household goods",
       "stockStatus": "in_stock",
-      "availableQuantity": 40,
+      "availableQuantity": 40 🥛,
       "unit": "2L bottle",
       "price": { "amount": 32.0, "currency": "ZAR" }
     },
@@ -158,7 +158,7 @@
       "name": "Rolled oats",
       "category": "Pantry staples",
       "stockStatus": "in_stock",
-      "availableQuantity": 17,
+      "availableQuantity": 17 🥣,
       "unit": "1kg bag",
       "price": { "amount": 42.99, "currency": "ZAR" }
     },
@@ -167,7 +167,7 @@
       "name": "Dishwashing liquid",
       "category": "Household goods",
       "stockStatus": "low_stock",
-      "availableQuantity": 4,
+      "availableQuantity": 4 🫧,
       "unit": "750ml bottle",
       "price": { "amount": 29.99, "currency": "ZAR" }
     }
