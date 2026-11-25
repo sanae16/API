@@ -1,1 +1,26 @@
-
+[
+  {
+    "code": "FRESH10",
+    "description": "10% off qualifying grocery orders",
+    "minimumSpend": 250,
+    "discount": "10%",
+    "expiry": "2026-12-31",
+    "active": true
+  },
+  {
+    "code": "FRESH50",
+    "description": "R50 off qualifying orders",
+    "minimumSpend": 400,
+    "discount": "R50",
+    "expiry": "2026-11-30",
+    "active": true
+  },
+  {
+    "code": "PAYDAY100",
+    "description": "R100 off qualifying orders",
+    "minimumSpend": 500,
+    "discount": "R100",
+    "expiry": "2026-08-31",
+    "active": false
+  }
+]
